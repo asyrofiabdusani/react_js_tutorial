@@ -3,22 +3,13 @@ import ReactDOM from "react-dom/client";
 import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
+import { HelloStateFull, HelloStateLess } from "./module/StateComp";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
-const Hello = () => {
-    return <p>Hello World!</p>;
-};
-
-class HelloStateFull extends React.Component {
-    render() {
-        return <p>Hello world</p>;
-    }
-}
-
 root.render(
     <React.StrictMode>
-        <HelloStateFull />
+        <HelloStateLess />
     </React.StrictMode>
 );
 

@@ -10,9 +10,15 @@ const Hello = () => {
     return <p>Hello World!</p>;
 };
 
+class HelloStateFull extends React.Component {
+    render() {
+        return <p>Hello world</p>;
+    }
+}
+
 root.render(
     <React.StrictMode>
-        <Hello />
+        <HelloStateFull />
     </React.StrictMode>
 );
 

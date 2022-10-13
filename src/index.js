@@ -3,13 +3,15 @@ import ReactDOM from "react-dom/client";
 import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
-import { HelloStateFull, HelloStateLess } from "./module/StateComp";
+// import { HelloStateFull, HelloStateLess } from "./module/StateComp";
+import Card from "./layout/Card";
+import ProductList from "./module/Card";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
 root.render(
     <React.StrictMode>
-        <HelloStateLess />
+        <ProductList />
     </React.StrictMode>
 );
 
